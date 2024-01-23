@@ -81,6 +81,7 @@ window.addEventListener("resize", () => {
 
   // Check if window width is less than or equal to the breakpoint
   if (window.innerWidth <= breakpoint) {
+    navbar.classList.add("navbar-shrink");
     // Select all elements with class 'vr'
     const vrElements = document.querySelectorAll(".vr");
 
@@ -96,6 +97,7 @@ window.addEventListener("resize", () => {
       vrElement.parentNode.replaceChild(hrElement, vrElement);
     });
   } else if (window.innerWidth > breakpoint) {
+    navbar.classList.remove("navbar-shrink");
     // Select all elements with class 'rvr'
     const rvrElements = document.querySelectorAll(".rvr");
 
