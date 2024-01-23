@@ -1,0 +1,2734 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dominic Giarrusso</title>
+    <link rel="icon" type="image/x-icon" href="assets/brand/DG-icon.ico" />
+    <link rel="stylesheet" href="assets/css/bscs.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet" />
+    <link
+      href="node_modules/lightbox2/dist/css/lightbox.css"
+      rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      id="navbar"
+      class="navbar lexend-bold navbar-expand-lg fixed-top"
+      data-aos="fade-down"
+      data-aos-duration="1000">
+      <div class="container-xxxl">
+        <a class="navbar-brand fs-4 text-light" href="#home">
+          <img
+            src="assets/brand/DG-logo.png"
+            alt="Logo"
+            width="75"
+            height="75"
+            class="d-inline-block align-text-center me-3" />Dominic Giarrusso</a
+        >
+        <button
+          id="navbar-hamburger"
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarToggler"
+          aria-controls="navbarToggler"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <div class="icon-container">
+            <svg
+              id="hamburger-icon"
+              class="icon icon-ham"
+              xmlns="http://www.w3.org/2000/svg"
+              width="36"
+              height="36"
+              fill="white"
+              class="bi bi-list"
+              viewBox="0 0 16 16">
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+            </svg>
+            <svg
+              id="x-icon"
+              class="icon icon-x active"
+              xmlns="http://www.w3.org/2000/svg"
+              width="36"
+              height="36"
+              fill="white"
+              class="bi bi-x"
+              viewBox="0 0 16 16">
+              <path
+                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+            </svg>
+          </div>
+        </button>
+        <div class="fs-4 collapse navbar-collapse" id="navbarToggler">
+          <ul class="navbar-nav ms-auto gap-2">
+            <li class="nav-item mx-0 mx-lg-1">
+              <a
+                id="nav-btn"
+                class="btn btn-pill btn-nav-landing lexend-bold fs-4"
+                href="#about">
+                <svg
+                  class="icon-align"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  class="bi bi-person"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+                </svg>
+                About Me</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                id="nav-btn"
+                class="btn btn-pill btn-nav-landing lexend-bold fs-4"
+                href="#projects">
+                <svg
+                  class="icon-align"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  class="bi bi-file-earmark-code"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z" />
+                  <path
+                    d="M8.646 6.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 9 8.646 7.354a.5.5 0 0 1 0-.708m-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 9l1.647-1.646a.5.5 0 0 0 0-.708" />
+                </svg>
+                Projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                id="nav-btn"
+                class="btn btn-pill btn-nav-landing lexend-bold fs-4"
+                href="#gallery">
+                <svg
+                  class="icon-align"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  class="bi bi-columns-gap"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M6 1v3H1V1zM1 0a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1zm14 12v3h-5v-3zm-5-1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1zM6 8v7H1V8zM1 7a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1zm14-6v7h-5V1zm-5-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z" />
+                </svg>
+                Gallery</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                id="nav-btn"
+                class="btn btn-pill btn-nav-landing lexend-bold fs-4"
+                href="#education">
+                <svg
+                  class="icon-align"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  class="bi bi-mortarboard"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917zM8 8.46 1.758 5.965 8 3.052l6.242 2.913z" />
+                  <path
+                    d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46z" />
+                </svg>
+                Education</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                id="nav-btn"
+                class="btn btn-pill btn-nav-landing lexend-bold fs-4"
+                href="#contact"
+                data-bs-offset="100">
+                <svg
+                  class="icon-align"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  class="bi bi-send"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z" />
+                </svg>
+                Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Wrapper Body -->
+    <div
+      id="wrapper"
+      class="wrapper bg-primary"
+      data-bs-spy="scroll"
+      data-bs-target="#navbar"
+      data-bs-offset="72"
+      data-bs-threshold="[0, 0.5, 1]"
+      tabindex="0">
+      <!-- Home/Landing -->
+      <header id="home">
+        <img
+          src="assets/bg/WebsiteBg1.webp"
+          alt="Background"
+          id="landing-bg"
+          class="bg-landing"
+          loading="eager"
+          data-aos="zoom-out"
+          data-aos-duration="2000" />
+        <div class="w-100">
+          <div class="row align-items-stretch justify-content-center">
+            <!-- Pfp -->
+            <div class="col-lg-4 text-end lpfp h-100">
+              <img
+                src="assets/img/DG-pfp_M.png"
+                class="pfp"
+                data-aos="fade-right"
+                data-aos-duration="1000" />
+            </div>
+            <!-- Title Text -->
+            <div
+              class="col-lg-6 lt h-100 align-self-center"
+              data-aos="fade-left"
+              data-aos-duration="1000">
+              <img src="assets/headings/DG-name_M.png" class="landing-text" />
+              <img src="assets/headings/DD-role_M.png" class="landing-role" />
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- About Section -->
+      <section
+        id="about"
+        class="container-xxxl bg-light mw-100 pt-5 pb-1 scroll-margin-about">
+        <div class="container-xxl pt-5 pb-5">
+          <!-- About Me -->
+          <div class="about text-center">
+            <h1 class="lexend-bold">About Me</h1>
+            <hr class="hul mb-5" />
+          </div>
+          <div class="row">
+            <div class="col pb-5">
+              <p
+                class="text-center roboto-medium fs-3"
+                data-aos="zoom-in"
+                data-aos-duration="1000">
+                I'm Dominic Giarrusso, I design like a dreamer, code like a
+                machine, and bridge them both together into something
+                beautifully functional. As a George Mason grad with a deep
+                passion for crafting fun and useful software. I push myself to
+                learn more and gain new experiences constantly, from building
+                with the cutting-edge game engine to creating helpful Chrome
+                extension. Remember that childhood game you couldn't get enough
+                of? I want to build that. The user-friendly tool that simplifies
+                your daily grind? That's my jam. When I'm not coding or
+                designing, I'm sharing my knowledge through Discord servers,
+                Stackoverflow and teaching aspiring developers. I thrive on
+                solving problems and pushing boundaries. So, let's talk design,
+                algorithms, and how we can together build the future, one line
+                of code at a time.
+              </p>
+            </div>
+          </div>
+          <!-- Top Projects -->
+          <div class="text-center pt-5 pb-3">
+            <h1 class="lexend-bold">Top Projects</h1>
+            <hr class="hul mb-5" style="max-width: 36rem" />
+          </div>
+          <div class="row row-cols-md-3 pb-5">
+            <div class="col mb-3 card-min-width">
+              <div
+                class="card shadow h-100"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <img
+                  src="assets/img/TN/TaskTimer_M.jpg"
+                  loading="lazy"
+                  class="card-img-top"
+                  alt="picture of Task:Timer Title" />
+                <div class="card-body">
+                  <h5 class="card-title lexend-bold">Task:Timer</h5>
+                  <p class="card-text roboto">
+                    Task:Timer is a Chrome extension that helps you have better
+                    time management. It uses the pomodoro technique to help you
+                    focus on your work.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-3 card-min-width">
+              <div
+                class="card shadow h-100"
+                data-aos="zoom-in-up"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <img
+                  src="assets/img/TN/Awakened_M.jpg"
+                  loading="lazy"
+                  class="card-img-top"
+                  alt="picture of Awakened Title" />
+                <div class="card-body">
+                  <h5 class="card-title lexend-bold">Awakened</h5>
+                  <p class="card-text roboto">
+                    Awakened is a 3D puzzle adventure game. It was built with
+                    Unreal Engine 5. In game you play as Magnol, a
+                    anthropomorphic ram, who is on a quest to regain his
+                    memories and solve the mystery behind <i>Nature's Curse</i>.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-3 card-min-width">
+              <div
+                class="card shadow card-rounded h-100"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <img
+                  src="assets/img/TN/CS50F_M.jpg"
+                  loading="lazy"
+                  class="card-img-top"
+                  alt="picture of C$50 Finance Title" />
+                <div class="card-body p-4">
+                  <h5 class="card-title lexend-bold">C$50 Finance</h5>
+                  <p class="card-text roboto">
+                    This is a Web App created using Flask and Python. It allows
+                    you to buy, sell, and track your stocks. Using the Yahoo API
+                    it is able to get real world stock information.
+                  </p>
+                  <small class="text-body-secondary roboto fst-italic">
+                    *Note: Money and transactions are fictional.</small
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Skills -->
+          <div class="text-center pt-5 pb-3">
+            <h1 class="lexend-bold">Skills</h1>
+            <hr class="hul mb-5" style="max-width: 18rem" />
+          </div>
+          <div class="row row-cols-md-3 pb-3">
+            <div class="col mb-5 card-min-width">
+              <div
+                class="card shadow h-100"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <div class="card-body p-4">
+                  <h5 class="card-title lexend-bold">
+                    <svg
+                      class="icon-align"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      fill="currentColor"
+                      class="bi bi-code-slash"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0" />
+                    </svg>
+                    Languages
+                  </h5>
+                  <p class="card-text roboto">
+                    Python, JavaScript, HTML, CSS, C#, C/C++, SQL, and Scratch
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-5 card-min-width">
+              <div
+                class="card shadow h-100"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+                data-aos-anchor-placement="center-bottom">
+                <div class="card-body p-4">
+                  <h5 class="card-title lexend-bold">
+                    <svg
+                      class="icon-align"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      fill="currentColor"
+                      class="bi bi-tools"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3q0-.405-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708M3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026z" />
+                    </svg>
+                    Tools and Frameworks
+                  </h5>
+                  <p class="card-text roboto">
+                    Git/Github, Visual Studio Code, Visual Studio, Unreal
+                    Engine, Unity, Linux, Windows, Bash, PowerShell, Boostrap,
+                    and Flask
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-5 card-min-width">
+              <div
+                class="card shadow card-rounded h-100"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-delay="400"
+                data-aos-anchor-placement="center-bottom">
+                <div class="card-body p-4">
+                  <h5 class="card-title lexend-bold">
+                    <svg
+                      class="icon-align"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      fill="currentColor"
+                      class="bi bi-pc-display"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M8 1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1zm1 13.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0m2 0a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0M9.5 1a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM9 3.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 0-1h-5a.5.5 0 0 0-.5.5M1.5 2A1.5 1.5 0 0 0 0 3.5v7A1.5 1.5 0 0 0 1.5 12H6v2h-.5a.5.5 0 0 0 0 1H7v-4H1.5a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5H7V2z" />
+                    </svg>
+                    Software
+                  </h5>
+                  <p class="card-text roboto">
+                    Adobe Suite (i.e. Photoshop, etc.), Microsoft Office Suite
+                    (i.e. Word, etc.), Blender, and 3ds Max
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-5 card-min-width">
+              <div
+                class="card shadow h-100"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <div class="card-body p-4">
+                  <h5 class="card-title lexend-bold">
+                    <svg
+                      class="icon-align"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      fill="currentColor"
+                      class="bi bi-layout-wtf"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M5 1v8H1V1zM1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1zm13 2v5H9V2zM9 1a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM5 13v2H3v-2zm-2-1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1zm12-1v2H9v-2zm-6-1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1z" />
+                    </svg>
+                    Design
+                  </h5>
+                  <p class="card-text roboto">
+                    Web Design, Game Design, UI/UX Design, Graphic Design,
+                    Lighting Design, and 3D Modeling
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-5 card-min-width">
+              <div
+                class="card shadow h-100"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom"
+                data-aos-delay="200">
+                <div class="card-body p-4">
+                  <h5 class="card-title lexend-bold">
+                    <svg
+                      class="icon-align"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      fill="currentColor"
+                      class="bi bi-person-gear"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m.256 7a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1zm3.63-4.54c.18-.613 1.048-.613 1.229 0l.043.148a.64.64 0 0 0 .921.382l.136-.074c.561-.306 1.175.308.87.869l-.075.136a.64.64 0 0 0 .382.92l.149.045c.612.18.612 1.048 0 1.229l-.15.043a.64.64 0 0 0-.38.921l.074.136c.305.561-.309 1.175-.87.87l-.136-.075a.64.64 0 0 0-.92.382l-.045.149c-.18.612-1.048.612-1.229 0l-.043-.15a.64.64 0 0 0-.921-.38l-.136.074c-.561.305-1.175-.309-.87-.87l.075-.136a.64.64 0 0 0-.382-.92l-.148-.045c-.613-.18-.613-1.048 0-1.229l.148-.043a.64.64 0 0 0 .382-.921l-.074-.136c-.306-.561.308-1.175.869-.87l.136.075a.64.64 0 0 0 .92-.382zM14 12.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0" />
+                    </svg>
+                    Soft Skills
+                  </h5>
+                  <p class="card-text roboto">
+                    Problem Solving, Communication, Teamwork, Critical Thinking,
+                    Leadership, Collaboration, and Adaptability
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-5 card-min-width">
+              <div
+                class="card shadow h-100"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom"
+                data-aos-delay="400">
+                <div class="card-body p-4">
+                  <h5 class="card-title lexend-bold">
+                    <svg
+                      class="icon-align"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      fill="currentColor"
+                      class="bi bi-basket"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9zM1 7v1h14V7zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5" />
+                    </svg>
+                    General and Other Skills
+                  </h5>
+                  <p class="card-text roboto">
+                    Software Development, Web Development, Game Development,
+                    Agile Development, Scrum, Teaching, Photography,
+                    Videography/Video Editing, PC Building, and Basic Auto
+                    Technology
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Projects -->
+      <header class="h-50">
+        <img
+          src="assets/bg/WebsiteBg2.webp"
+          alt="Background"
+          class="bg-landing"
+          style="top: -50px" />
+        <h1 class="lexend-bold text-center text-light super-heading">
+          Projects
+        </h1>
+      </header>
+      <section
+        id="projects"
+        class="container-xxxl bg-light mw-100 pt-5 pb-1 scroll-margin">
+        <div class="container-xxl pt-5 pb-5">
+          <!-- Project Cards -->
+          <!-- Task:Timer -->
+          <div class="row pt-3 pb-3 gap-0">
+            <div
+              class="vid-grid"
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+              data-aos-anchor-placement="center-bottom">
+              <div
+                class="vid-container shadow h-100"
+                style="background-color: #5b8dff">
+                <img
+                  id="thumbnail"
+                  src="assets/img/TN/TaskTimer_M.jpg"
+                  loading="lazy"
+                  class="vid-round img-grid-fill scale-down"
+                  alt="picture of Task:Timer Title" />
+              </div>
+              <div class="card shadow vid-info rounded-0 rounded-end p-4 h-100">
+                <h5 class="card-title lexend-bold">Task:Timer</h5>
+                <p class="card-text roboto">
+                  <b>Languages:</b> HTML, CSS, Javascript
+                </p>
+                <p class="card-text roboto"><b>Framework:</b> Bootstrap</p>
+                <p class="card-text roboto">
+                  <b>Description:</b> Task:Timer is a Chrome extension that
+                  allows you to set two timers at once. Why two-timers? you may
+                  now be asking. Well, the idea follows the time management
+                  method called The Pomodoro Technique. This technique follows
+                  the concept that you work more efficiently by working for a
+                  set number of time and then taking a break usually for a
+                  shorter amount of time. An example of this would be working
+                  for 30 minutes and then taking a break for 5 minutes.
+                  Task:Timer is to help time manage better.
+                </p>
+                <a
+                  href="https://github.com/Dman55g/Task-Timer"
+                  class="btn btn-page btn-lg btn-pill roboto-bold"
+                  style="width: 12rem"
+                  role="button"
+                  aria-disabled="true"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <svg
+                    class="icon-align"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    class="bi bi-github"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                  </svg>
+                  GitHub Repo</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Awakened -->
+          <div class="row pt-3 pb-3 gap-0">
+            <div
+              class="vid-grid"
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+              data-aos-anchor-placement="center-bottom">
+              <div
+                class="vid-container shadow h-100"
+                style="background-color: #0c343d">
+                <img
+                  id="thumbnail"
+                  src="assets/img/TN/Awakened_M.jpg"
+                  loading="lazy"
+                  class="vid-round img-grid-fill scale-down"
+                  alt="picture of Awakened Title" />
+              </div>
+              <div class="card shadow vid-info rounded-0 rounded-end p-4 h-100">
+                <h5 class="card-title lexend-bold">Awakened</h5>
+                <p class="card-text roboto"><b>Engine:</b> Unreal Engine 5</p>
+                <p class="card-text roboto">
+                  <b>Genre:</b> 3rd Person, Puzzle, Adventure, Exploration
+                </p>
+                <p class="card-text roboto"><b>Platform:</b> Windows</p>
+                <p class="card-text roboto">
+                  <b>Description:</b> Awakened is a 3D puzzle adventure game
+                  where you play as Magnol, an anthropomorphic ram, who awakes
+                  to a world he doesn't remember. He is set on a quest to solve
+                  the mystery behind <i>Nature's Curse</i> and regain his lost
+                  memories. On this quest, you are not alone. Throughout the
+                  various maps, you will come upon Wisps that give you
+                  supernatural abilities to help solve puzzles to get through
+                  each level.
+                </p>
+                <p class="card-text roboto">
+                  <b>Contributions:</b> Producer and Designer
+                </p>
+                <small class="text-body-secondary roboto fst-italic mb-3"
+                  >*Contact me for greater details about my contributions</small
+                >
+                <a
+                  href="https://dman55g.itch.io/awakened"
+                  class="btn btn-page btn-lg btn-pill roboto-bold"
+                  style="width: 12rem"
+                  role="button"
+                  aria-disabled="true"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <svg
+                    class="icon-align"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    class="bi bi-controller"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M11.5 6.027a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m2.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m-6.5-3h1v1h1v1h-1v1h-1v-1h-1v-1h1z" />
+                    <path
+                      d="M3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .62.39c.655-.079 1.35-.117 2.043-.117.72 0 1.443.041 2.12.126a.5.5 0 0 1 .622-.399l1.932.518a.5.5 0 0 1 .306.729q.211.136.373.297c.408.408.78 1.05 1.095 1.772.32.733.599 1.591.805 2.466s.34 1.78.364 2.606c.024.816-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773-.245-.232-.496-.526-.739-.808-.126-.148-.25-.292-.368-.423-.728-.804-1.597-1.527-3.224-1.527s-2.496.723-3.224 1.527c-.119.131-.242.275-.368.423-.243.282-.494.575-.739.808-.398.38-.877.706-1.513.773a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772a2.3 2.3 0 0 1 .433-.335l-.028-.079zm2.036.412c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a14 14 0 0 0-.748 2.295 12.4 12.4 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.504C4.861 9.969 5.978 9.027 8 9.027s3.139.942 3.965 1.855c.164.181.307.348.44.504.214.251.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.4 12.4 0 0 0-.339-2.406 14 14 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27s-2.063.091-2.913.27" />
+                  </svg>
+                  itch.io page</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- C$50 Finance -->
+          <div class="row pt-3 pb-3 gap-0">
+            <div
+              class="vid-grid"
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+              data-aos-anchor-placement="center-bottom">
+              <div
+                class="vid-container shadow h-100"
+                style="background-color: #f8f9fb">
+                <img
+                  id="thumbnail"
+                  src="assets/img/TN/CS50F_M.jpg"
+                  loading="lazy"
+                  class="vid-round img-grid-fill scale-down"
+                  alt="picture of C$50 Finance Title" />
+              </div>
+              <div class="card shadow vid-info rounded-0 rounded-end p-4 h-100">
+                <h5 class="card-title lexend-bold">C$50 Finance</h5>
+                <p class="card-text roboto">
+                  <b>Languages:</b> HTML, CSS, Python, SQL
+                </p>
+                <p class="card-text roboto">
+                  <b>Framework:</b> Flask and Bootstrap
+                </p>
+                <p class="card-text roboto">
+                  <b>Description:</b> This is a project I worked on while taking
+                  CS50x. It is a simple web app that allows you to create or log
+                  into an account. You can then look up a real-world stock price
+                  using Yahoo Finance API. In the web app, you can also buy,
+                  sell, and track your stock. All the information is stored in a
+                  SQL database and passwords are encrypted. None of the money
+                  and transactions are real it is just a simple demonstration.
+                  The majority of the code was written by myself but parts of it
+                  were written by the CS50 team at Harvard.
+                </p>
+                <a
+                  href="https://github.com/Dman55g/CS50-Finace-Web-App"
+                  class="btn btn-page btn-lg btn-pill roboto-bold"
+                  style="width: 12rem"
+                  role="button"
+                  aria-disabled="true"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <svg
+                    class="icon-align"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    class="bi bi-github"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                  </svg>
+                  GitHub Repo</a
+                >
+                <small class="text-body-secondary roboto fst-italic pt-2"
+                  >*Notes: This isn't a live web app, none of the money or
+                  transactions are real, this project is just a demonstration of
+                  my skills and educational purposes.
+                </small>
+              </div>
+            </div>
+          </div>
+          <!-- Python Friends Sorter -->
+          <div class="row pt-3 pb-3 gap-0">
+            <div
+              class="vid-grid"
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+              data-aos-anchor-placement="center-bottom">
+              <div
+                class="vid-container shadow h-100"
+                style="background-color: black">
+                <img
+                  id="thumbnail"
+                  src="assets/img/TN/FriendsSorterTiltle_M.jpg"
+                  loading="lazy"
+                  class="vid-round img-grid-fill scale-down"
+                  alt="picture of Python Friends Sorter Title" />
+              </div>
+              <div class="card shadow vid-info rounded-0 rounded-end p-4 h-100">
+                <h5 class="card-title lexend-bold">CLI Friends Sorter</h5>
+                <p class="card-text roboto"><b>Languages:</b> Python</p>
+                <p class="card-text roboto">
+                  <b>Description:</b> This program sorts out a list of your
+                  friends. It takes in a CSV file that has three columns. The
+                  first one is the name of the friend. The second column is the
+                  attribute of the friend. The third column is the birthday of
+                  the friend. The attribute and birthday are then sorted through
+                  the program and a new ouput CSV file is then given. In the
+                  output CSV you will find the same first column, name. In the
+                  second column, you will find the role in the friend group they
+                  were sorted into based off of their attribute. Then in the
+                  third column, you will find their zodiac sign based off of the
+                  birthday given.
+                </p>
+                <a
+                  href="https://github.com/Dman55g/Friends_Sorter"
+                  class="btn btn-page btn-lg btn-pill roboto-bold"
+                  style="width: 12rem"
+                  role="button"
+                  aria-disabled="true"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <svg
+                    class="icon-align"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    class="bi bi-github"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                  </svg>
+                  GitHub Repo</a
+                >
+                <small class="text-body-secondary roboto fst-italic pt-2"
+                  >*Note: You will need python installed to run this program.
+                </small>
+              </div>
+            </div>
+          </div>
+          <!-- Kojimachi -->
+          <div class="row pt-3 pb-3 gap-0">
+            <div
+              class="vid-grid"
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+              data-aos-anchor-placement="center-bottom">
+              <div
+                class="vid-container shadow h-100"
+                style="background-color: #0c0c12">
+                <img
+                  id="thumbnail"
+                  src="assets/img/TN/kojiiconTN.jpg"
+                  loading="lazy"
+                  class="vid-round img-grid-fill scale-down"
+                  alt="picture of Kojimachi Title" />
+              </div>
+              <div class="card shadow vid-info rounded-0 rounded-end p-4 h-100">
+                <h5 class="card-title lexend-bold">Kojimachi</h5>
+                <p class="card-text roboto"><b>Engine:</b> Godot</p>
+                <p class="card-text roboto">
+                  <b>Genre:</b> Pet Simulator, Widget Game
+                </p>
+                <p class="card-text roboto"><b>Platform:</b> Windows, Linux</p>
+                <p class="card-text roboto">
+                  <b>Description:</b> Kojimachi is a widget-style pet game where
+                  you can feed and care for your pet on the island you decorate.
+                  You can play on your desktop or over other applications so you
+                  never miss a moment! Adopt and name your own unique pet. Care
+                  for your pet by feeding them, keeping them clean, and playing
+                  with them! The game is fully released and available on Steam
+                  right now.
+                </p>
+                <p class="card-text roboto">
+                  <b>Contributions:</b> QA Tester, Markting Director, Web
+                  Designer
+                </p>
+                <small class="text-body-secondary roboto fst-italic mb-3"
+                  >*Contact me for greater details about my contributions</small
+                >
+                <div class="row gap-2">
+                  <a
+                    href="https://yetimouthgames.com/kojimachi.html"
+                    class="btn btn-page btn-lg btn-pill roboto-bold"
+                    style="width: 15rem"
+                    role="button"
+                    aria-disabled="true"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <svg
+                      class="icon-align"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      class="bi bi-globe2"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855q-.215.403-.395.872c.705.157 1.472.257 2.282.287zM4.249 3.539q.214-.577.481-1.078a7 7 0 0 1 .597-.933A7 7 0 0 0 3.051 3.05q.544.277 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9 9 0 0 1-1.565-.667A6.96 6.96 0 0 0 1.018 7.5zm1.4-2.741a12.3 12.3 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332M8.5 5.09V7.5h2.99a12.3 12.3 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.6 13.6 0 0 1 7.5 10.91V8.5zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741zm-3.282 3.696q.18.469.395.872c.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a7 7 0 0 1-.598-.933 9 9 0 0 1-.481-1.079 8.4 8.4 0 0 0-1.198.49 7 7 0 0 0 2.276 1.522zm-1.383-2.964A13.4 13.4 0 0 1 3.508 8.5h-2.49a6.96 6.96 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667m6.728 2.964a7 7 0 0 0 2.275-1.521 8.4 8.4 0 0 0-1.197-.49 9 9 0 0 1-.481 1.078 7 7 0 0 1-.597.933M8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855q.216-.403.395-.872A12.6 12.6 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.96 6.96 0 0 0 14.982 8.5h-2.49a13.4 13.4 0 0 1-.437 3.008M14.982 7.5a6.96 6.96 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008zM11.27 2.461q.266.502.482 1.078a8.4 8.4 0 0 0 1.196-.49 7 7 0 0 0-2.275-1.52c.218.283.418.597.597.932m-.488 1.343a8 8 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z" />
+                    </svg>
+                    Kojimachi Website</a
+                  >
+                  <a
+                    href="https://store.steampowered.com/app/1880020/Kojimachi/"
+                    class="btn btn-page btn-lg btn-pill roboto-bold"
+                    style="width: 11rem"
+                    role="button"
+                    aria-disabled="true"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <svg
+                      class="icon-align"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      class="bi bi-steam"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M.329 10.333A8.01 8.01 0 0 0 7.99 16C12.414 16 16 12.418 16 8s-3.586-8-8.009-8A8.006 8.006 0 0 0 0 7.468l.003.006 4.304 1.769A2.2 2.2 0 0 1 5.62 8.88l1.96-2.844-.001-.04a3.046 3.046 0 0 1 3.042-3.043 3.046 3.046 0 0 1 3.042 3.043 3.047 3.047 0 0 1-3.111 3.044l-2.804 2a2.223 2.223 0 0 1-3.075 2.11 2.22 2.22 0 0 1-1.312-1.568L.33 10.333Z" />
+                      <path
+                        d="M4.868 12.683a1.715 1.715 0 0 0 1.318-3.165 1.7 1.7 0 0 0-1.263-.02l1.023.424a1.261 1.261 0 1 1-.97 2.33l-.99-.41a1.7 1.7 0 0 0 .882.84Zm3.726-6.687a2.03 2.03 0 0 0 2.027 2.029 2.03 2.03 0 0 0 2.027-2.029 2.03 2.03 0 0 0-2.027-2.027 2.03 2.03 0 0 0-2.027 2.027m2.03-1.527a1.524 1.524 0 1 1-.002 3.048 1.524 1.524 0 0 1 .002-3.048" />
+                    </svg>
+                    Steam page</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Major Major Mayhem -->
+          <div class="row pt-3 pb-3 gap-0">
+            <div
+              class="vid-grid"
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+              data-aos-anchor-placement="center-bottom">
+              <div
+                class="vid-container shadow h-100"
+                style="background-color: #0d9b45">
+                <img
+                  id="thumbnail"
+                  src="assets/img/TN/MajorMayhem.jpg"
+                  loading="lazy"
+                  class="vid-round img-grid-fill scale-down"
+                  alt="picture of Major Major Mayhem Title" />
+              </div>
+              <div class="card shadow vid-info rounded-0 rounded-end p-4 h-100">
+                <h5 class="card-title lexend-bold">Major Major Mayhem</h5>
+                <p class="card-text roboto"><b>Engine:</b> Unity</p>
+                <p class="card-text roboto">
+                  <b>Genre:</b> 2D, Puyo Puyo Fighting Game
+                </p>
+                <p class="card-text roboto">
+                  <b>Platform:</b> Windows, WINNITRON
+                </p>
+                <p class="card-text roboto">
+                  <b>Description:</b> In this exciting game, you will have the
+                  opportunity to experience life as a student at George Mason
+                  University and compete against other majors to determine who
+                  is the most successful. Choose from four unique characters,
+                  each representing a different major, and use your skills and
+                  knowledge to outshine your rivals. With engaging challenges
+                  and tasks to complete, you'll need to stay focused and on top
+                  of your game to come out on top. Will you emerge as the
+                  ultimate victor, or will another major claim the title? The
+                  choice is yours in this thrilling competition.
+                </p>
+                <p class="card-text roboto">
+                  <b>Contributions:</b> Lighting Designer
+                </p>
+                <small class="text-body-secondary roboto fst-italic mb-3"
+                  >*Contact me for greater details about my contributions</small
+                >
+                <a
+                  href="https://skyboygames.itch.io/major-major-mayhem"
+                  class="btn btn-page btn-lg btn-pill roboto-bold"
+                  style="width: 12rem"
+                  role="button"
+                  aria-disabled="true"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <svg
+                    class="icon-align"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    class="bi bi-controller"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M11.5 6.027a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m2.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m-6.5-3h1v1h1v1h-1v1h-1v-1h-1v-1h1z" />
+                    <path
+                      d="M3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .62.39c.655-.079 1.35-.117 2.043-.117.72 0 1.443.041 2.12.126a.5.5 0 0 1 .622-.399l1.932.518a.5.5 0 0 1 .306.729q.211.136.373.297c.408.408.78 1.05 1.095 1.772.32.733.599 1.591.805 2.466s.34 1.78.364 2.606c.024.816-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773-.245-.232-.496-.526-.739-.808-.126-.148-.25-.292-.368-.423-.728-.804-1.597-1.527-3.224-1.527s-2.496.723-3.224 1.527c-.119.131-.242.275-.368.423-.243.282-.494.575-.739.808-.398.38-.877.706-1.513.773a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772a2.3 2.3 0 0 1 .433-.335l-.028-.079zm2.036.412c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a14 14 0 0 0-.748 2.295 12.4 12.4 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.504C4.861 9.969 5.978 9.027 8 9.027s3.139.942 3.965 1.855c.164.181.307.348.44.504.214.251.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.4 12.4 0 0 0-.339-2.406 14 14 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27s-2.063.091-2.913.27" />
+                  </svg>
+                  itch.io page</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Gallery Header -->
+      <header class="h-50">
+        <img
+          src="assets/bg/WebsiteBg3.webp"
+          alt="Background"
+          class="bg-landing" />
+        <h1 class="lexend-bold text-center text-light super-heading">
+          Gallery
+        </h1>
+      </header>
+      <section
+        id="gallery"
+        class="container-xxxl bg-light mw-100 scroll-margin">
+        <div class="container-xxl pt-5 pb-5">
+          <!-- Warning Header -->
+          <div class="row">
+            <div
+              class="alert alert-primary rounded-5 roboto-medium mx-auto text-center"
+              role="alert"
+              style="width: auto">
+              <p>
+                <svg
+                  class="icon-align"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  class="bi bi-info-circle"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                  <path
+                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+                </svg>
+                This section is pretty big and might be a lot to scroll through.
+                So select a link to get to the specific part or skip to the end.
+              </p>
+              <p>P.S. Click on the pictures to view them in original size.</p>
+              <hr />
+              <div class="row mb-0 fs-5 gap-2">
+                <a href="#videos" class="alert-link px-3">Skip to Videos</a>
+
+                <a href="#gaap" class="alert-link px-3"
+                  >Skip to Graphic Art and Paintings</a
+                >
+
+                <a href="#education" class="alert-link px-3"
+                  >Skip to Start of Education</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Photos Title -->
+          <div class="row pt-5 pb-3">
+            <div class="text-center">
+              <h1 class="lexend-bold wide-title">Photographs</h1>
+              <hr class="hul mb-5" style="max-width: 38rem" />
+            </div>
+          </div>
+
+          <!-- Photos Gallery -->
+          <div class="row pb-3">
+            <div class="gallery-grid">
+              <div
+                class="img-container img-tall"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198241&authkey=%21ANBs2wVxlg8SZno&height=1024"
+                  class="w-100"
+                  data-lightbox="pic-gallery"
+                  data-title="Shades of Red">
+                  <img
+                    src="assets/img/TN/SoR_M.png"
+                    loading="lazy"
+                    alt="picture of Shades of Red"
+                    class="img-fill"
+                /></a>
+              </div>
+              <div
+                class="img-container"
+                data-aos="zoom-in-up"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198242&authkey=%21AJFdvWkcbMN9GTw&width=1024"
+                  class="w-100"
+                  data-lightbox="pic-gallery"
+                  data-title="Botanical Home">
+                  <img
+                    src="assets/img/TN/BotanicalHome_M.jpg"
+                    loading="lazy"
+                    alt="picture of Botanical Home"
+                    class="img-fill"
+                /></a>
+              </div>
+              <div
+                class="img-container"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198243&authkey=%21AKjAPwOnD3qcdiI&width=1024"
+                  class="w-100"
+                  data-lightbox="pic-gallery"
+                  data-title="Botanical Fields">
+                  <img
+                    src="assets/img/TN/BotanicalFields_M.jpg"
+                    loading="lazy"
+                    alt="picture of Botanical Fields"
+                    class="img-fill"
+                /></a>
+              </div>
+              <div
+                class="img-container img-wide"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198244&authkey=%21ADjLjqcgUkYy2CE&width=1024"
+                  class="w-100"
+                  data-lightbox="pic-gallery"
+                  data-title="Autumn Greetings">
+                  <img
+                    src="assets/img/TN/AutumnGreetings_M.jpg"
+                    loading="lazy"
+                    alt="picture of Autumn Greetings"
+                    class="img-fill"
+                /></a>
+              </div>
+              <div
+                class="img-container"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198251&authkey=%21AIo71fmzwvWGj5A&height=1024"
+                  class="w-100"
+                  data-lightbox="pic-gallery"
+                  data-title="Purple Bloom">
+                  <img
+                    src="assets/img/TN/PurpleBloom_M.jpg"
+                    loading="lazy"
+                    alt="picture of Purple Bloom"
+                    class="img-fill"
+                /></a>
+              </div>
+              <div
+                class="img-container"
+                data-aos="zoom-in-up"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198252&authkey=%21ABBNeczEEeKmf_E&width=1024"
+                  class="w-100"
+                  data-lightbox="pic-gallery"
+                  data-title="Simply White Flower">
+                  <img
+                    src="assets/img/TN/SWF_M.png"
+                    loading="lazy"
+                    alt="picture of Simply White Flower"
+                    class="img-fill"
+                /></a>
+              </div>
+              <div
+                class="img-container img-tall"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198253&authkey=%21AKl8Gt2kAs_lb3g&width=1024"
+                  class="w-100"
+                  data-lightbox="pic-gallery"
+                  data-title="Morning Field">
+                  <img
+                    src="assets/img/TN/MF_M.png"
+                    loading="lazy"
+                    alt="picture of Morning Field"
+                    class="img-fill"
+                /></a>
+              </div>
+              <div
+                class="img-container img-wide"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198254&authkey=%21AKKZRJ7i_smeO7c&width=1024"
+                  class="w-100"
+                  data-lightbox="pic-gallery"
+                  data-title="Early Sun Rise">
+                  <img
+                    src="assets/img/TN/ESR_M.png"
+                    loading="lazy"
+                    alt="picture of Early Sun Rise"
+                    class="img-fill"
+                /></a>
+              </div>
+              <div
+                class="img-container img-tall"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198255&authkey=%21AKZP2fTbQKk_eCw&width=1024"
+                  class="w-100"
+                  data-lightbox="pic-gallery"
+                  data-title="Good Vibes with George">
+                  <img
+                    src="assets/img/TN/GTwG_M.png"
+                    loading="lazy"
+                    alt="picture of Good Vibes with George"
+                    class="img-fill"
+                /></a>
+              </div>
+              <div
+                class="img-container"
+                data-aos="zoom-in-up"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198256&authkey=%21ACgEBrhjZ_K5LUk&width=1024"
+                  class="w-100"
+                  data-lightbox="pic-gallery"
+                  data-title="Florence - Cathedral of Saint Marry of the Flower">
+                  <img
+                    src="assets/img/TN/CoSMotF_M.jpeg"
+                    loading="lazy"
+                    alt="picture of Florence - Cathedral of Saint Marry of the Flower"
+                    class="img-fill"
+                /></a>
+              </div>
+              <div
+                class="img-container"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198257&authkey=%21AD7zCsm_aPzQJOE&width=1024"
+                  class="w-100"
+                  data-lightbox="pic-gallery"
+                  data-title="Look out over Capri">
+                  <img
+                    src="assets/img/TN/LOOC_M.jpeg"
+                    loading="lazy"
+                    alt="picture of Look out over Capri"
+                    class="img-fill"
+                /></a>
+              </div>
+              <div
+                class="img-container img-wide"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198237&authkey=%21AGJUUZsPwHgg2RY&width=1024"
+                  class="w-100"
+                  data-lightbox="pic-gallery"
+                  data-title="View of Kyoto">
+                  <img
+                    src="assets/img/TN/VoK_M.jpg"
+                    loading="lazy"
+                    alt="picture of View of Kyoto"
+                    class="img-fill"
+                /></a>
+              </div>
+              <div
+                class="img-container img-wide"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198234&authkey=%21AGBQug0acs3cYYo&width=1024"
+                  class="w-100"
+                  data-lightbox="pic-gallery"
+                  data-title="River Side in Kyoto">
+                  <img
+                    src="assets/img/TN/RsK_M.jpg"
+                    loading="lazy"
+                    alt="picture of River Side in Kyoto"
+                    class="img-fill"
+                /></a>
+              </div>
+              <div
+                class="img-container"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198232&authkey=%21AJ54zwVEhG_h6pw&width=1024"
+                  class="w-100"
+                  data-lightbox="pic-gallery"
+                  data-title="Torii Pond">
+                  <img
+                    src="assets/img/TN/TP_M.jpg"
+                    loading="lazy"
+                    alt="picture of Torii Pond"
+                    class="img-fill"
+                /></a>
+              </div>
+              <div
+                class="img-container"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198235&authkey=%21ABmxLL0YVBKB_A4&width=1024"
+                  class="w-100"
+                  data-lightbox="pic-gallery"
+                  data-title="Framed Forest">
+                  <img
+                    src="assets/img/TN/FF_M.jpg"
+                    loading="lazy"
+                    alt="picture of Framed Forest"
+                    class="img-fill"
+                /></a>
+              </div>
+              <div
+                class="img-container"
+                data-aos="zoom-in-up"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198236&authkey=%21AK2-QkXuIsE4EXA&width=1024"
+                  class="w-100"
+                  data-lightbox="pic-gallery"
+                  data-title="Spirit Tree">
+                  <img
+                    src="assets/img/TN/ST_M.jpg"
+                    loading="lazy"
+                    alt="picture of Spirit Tree"
+                    class="img-fill"
+                /></a>
+              </div>
+              <div
+                class="img-container img-tall"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198233&authkey=%21AFd1mbRXk8fbk6A&height=1024"
+                  class="w-100"
+                  data-lightbox="pic-gallery"
+                  data-title="Forest Path">
+                  <img
+                    src="assets/img/TN/FP_M.jpg"
+                    loading="lazy"
+                    alt="picture of Forest Path"
+                    class="img-fill"
+                /></a>
+              </div>
+              <div
+                class="img-container img-tall"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198222&authkey=%21ADM0re46vVUKakA&height=1024"
+                  class="w-100"
+                  data-lightbox="pic-gallery"
+                  data-title="Gorge Trail">
+                  <img
+                    src="assets/img/TN/GT_M.jpg"
+                    loading="lazy"
+                    alt="picture of Gorge Trail"
+                    class="img-fill"
+                /></a>
+              </div>
+              <div
+                class="img-container"
+                data-aos="zoom-in-up"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198238&authkey=%21ADnQ33LVuTK7PxY&height=1024"
+                  class="w-100"
+                  data-lightbox="pic-gallery"
+                  data-title="Torii Gates">
+                  <img
+                    src="assets/img/TN/TG_M.jpg"
+                    loading="lazy"
+                    alt="picture of Torii Gates"
+                    class="img-fill"
+                /></a>
+              </div>
+              <div
+                class="img-container img-wide"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198228&authkey=%21AC-hH6Wy6Dy6xWU&width=1024"
+                  class="w-100"
+                  data-lightbox="pic-gallery"
+                  data-title="Dear Oh Deer">
+                  <img
+                    src="assets/img/TN/DoD_M.jpg"
+                    loading="lazy"
+                    alt="picture of Dear Oh Deer"
+                    class="img-fill"
+                /></a>
+              </div>
+              <div
+                class="img-container"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198229&authkey=%21AKixVj4YItnbPWk&width=1024"
+                  class="w-100"
+                  data-lightbox="pic-gallery"
+                  data-title="Deer Park">
+                  <img
+                    src="assets/img/TN/DP_M.jpg"
+                    loading="lazy"
+                    alt="picture of Deer Park"
+                    class="img-fill"
+                /></a>
+              </div>
+              <div
+                class="img-container img-tall"
+                data-aos="zoom-in-up"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198227&authkey=%21AEISLSwt3sCgHpY&height=1024"
+                  class="w-100"
+                  data-lightbox="pic-gallery"
+                  data-title="City Sunset">
+                  <img
+                    src="assets/img/TN/CSs_M.jpg"
+                    loading="lazy"
+                    alt="picture of City Sunset"
+                    class="img-fill"
+                /></a>
+              </div>
+              <div
+                class="img-container"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198220&authkey=%21AIr_o2WHxBC0eKs&height=1024"
+                  class="w-100"
+                  data-lightbox="pic-gallery"
+                  data-title="Heaven on Earth aka 7-Eleven">
+                  <img
+                    src="assets/img/TN/HoE_M.jpg"
+                    loading="lazy"
+                    alt="picture of Heaven on Earth aka 7-Eleven"
+                    class="img-fill"
+                /></a>
+              </div>
+              <div
+                class="img-container"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198230&authkey=%21AH1fZNun6q6O59k&height=1024"
+                  class="w-100"
+                  data-lightbox="pic-gallery"
+                  data-title="Mirror Pond">
+                  <img
+                    src="assets/img/TN/MirP_M.jpg"
+                    loading="lazy"
+                    alt="picture of Mirror Pond"
+                    class="img-fill"
+                /></a>
+              </div>
+              <div
+                class="img-container img-tall"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198221&authkey=%21AMT_xUWrQeltlL4&height=1024"
+                  class="w-100"
+                  data-lightbox="pic-gallery"
+                  data-title="Late Night in Osaka">
+                  <img
+                    src="assets/img/TN/LNIO_M.jpg"
+                    loading="lazy"
+                    alt="picture of Late Night in Osaka"
+                    class="img-fill"
+                /></a>
+              </div>
+              <div
+                class="img-container img-wide"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198225&authkey=%21ACnfxY4woM2NVdA&width=1024"
+                  class="w-100"
+                  data-lightbox="pic-gallery"
+                  data-title="Stroll through Tokyo">
+                  <img
+                    src="assets/img/TN/STT_M.jpg"
+                    loading="lazy"
+                    alt="picture of Stroll through Tokyo"
+                    class="img-fill"
+                /></a>
+              </div>
+              <div
+                class="img-container"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198223&authkey=%21AEtCZaiGjmQXJ-M&width=1024"
+                  class="w-100"
+                  data-lightbox="pic-gallery"
+                  data-title="Mirrored City">
+                  <img
+                    src="assets/img/TN/MirC_M.jpg"
+                    loading="lazy"
+                    alt="picture of Mirrored City"
+                    class="img-fill"
+                /></a>
+              </div>
+              <div
+                class="img-container img-wide"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198226&authkey=%21AJGVktPocYLTuHI&width=1024"
+                  class="w-100"
+                  data-lightbox="pic-gallery"
+                  data-title="Morning Stroll">
+                  <img
+                    src="assets/img/TN/MornS_M.jpg"
+                    loading="lazy"
+                    alt="picture of Morning Stroll"
+                    class="img-fill"
+                /></a>
+              </div>
+              <div
+                class="img-container img-tall"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198224&authkey=%21ANwdCmqScLAWIoU&width=1024"
+                  class="w-100"
+                  data-lightbox="pic-gallery"
+                  data-title="Street View of Tokyo">
+                  <img
+                    src="assets/img/TN/SVoT_M.jpg"
+                    loading="lazy"
+                    alt="picture of Street View of Tokyo"
+                    class="img-fill"
+                /></a>
+              </div>
+              <div
+                class="img-container"
+                data-aos="zoom-in-up"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198219&authkey=%21AGpD1QkkkjuyLBk&width=1024"
+                  class="w-100"
+                  data-lightbox="pic-gallery"
+                  data-title="Gundam in the Distance">
+                  <img
+                    src="assets/img/TN/GiTD_M.jpg"
+                    loading="lazy"
+                    alt="picture of Gundam in the Distance"
+                    class="img-fill"
+                /></a>
+              </div>
+              <div
+                class="img-container"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198218&authkey=%21AKBzvHaD31aQ5y0&width=1024"
+                  class="w-100"
+                  data-lightbox="pic-gallery"
+                  data-title="Majesty of Gundam">
+                  <img
+                    src="assets/img/TN/MoG_M.jpg"
+                    loading="lazy"
+                    alt="picture of Majesty of Gundam"
+                    class="img-fill"
+                /></a>
+              </div>
+              <div
+                class="img-container img-wide"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198215&authkey=%21APrTv9YDX0kTGz4&width=1024"
+                  class="w-100"
+                  data-lightbox="pic-gallery"
+                  data-title="Panorama of Fuji 1">
+                  <img
+                    src="assets/img/TN/PF1_M.jpg"
+                    loading="lazy"
+                    alt="picture of Panorama of Fuji 1"
+                    class="img-fill"
+                /></a>
+              </div>
+              <div
+                class="img-container img-wide"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198216&authkey=%21ALhZzx0lFmXpDwM&width=1024"
+                  class="w-100"
+                  data-lightbox="pic-gallery"
+                  data-title="Panorama of Fuji 2">
+                  <img
+                    src="assets/img/TN/PF2_M.jpg"
+                    loading="lazy"
+                    alt="picture of Panorama of Fuji 2"
+                    class="img-fill"
+                /></a>
+              </div>
+              <div
+                class="img-container"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198214&authkey=%21AGg02vV8yO1ZqJg&width=1024"
+                  class="w-100"
+                  data-lightbox="pic-gallery"
+                  data-title="Glance up at Fuji">
+                  <img
+                    src="assets/img/TN/GuaF_M.jpg"
+                    loading="lazy"
+                    alt="picture of Glance up at Fuji"
+                    class="img-fill"
+                /></a>
+              </div>
+              <div
+                class="img-container"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198211&authkey=%21ADMuI4BdI8YxW84&width=1024"
+                  class="w-100"
+                  data-lightbox="pic-gallery"
+                  data-title="Fuji Blurred">
+                  <img
+                    src="assets/img/TN/FBd_M.jpg"
+                    loading="lazy"
+                    alt="picture of Fuji Blurred"
+                    class="img-fill"
+                /></a>
+              </div>
+              <div
+                class="img-container img-wide"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198217&authkey=%21AOXBlgiLqHHk7rk&width=1024"
+                  class="w-100"
+                  data-lightbox="pic-gallery"
+                  data-title="Panorama of Fuji 3">
+                  <img
+                    src="assets/img/TN/PF3_M.jpg"
+                    loading="lazy"
+                    alt="picture of Panorama of Fuji 3"
+                    class="img-fill"
+                /></a>
+              </div>
+              <div
+                class="img-container"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198231&authkey=%21AECGWnNFZmfaBPE&height=1024"
+                  class="w-100"
+                  data-lightbox="pic-gallery"
+                  data-title="Fuji Looming">
+                  <img
+                    src="assets/img/TN/FLoom_M.jpg"
+                    loading="lazy"
+                    alt="picture of Fuji Looming"
+                    class="img-fill"
+                /></a>
+              </div>
+              <div
+                class="img-container"
+                data-aos="zoom-in-up"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198213&authkey=%21AFCTwQonAt7jhNA&height=1024"
+                  class="w-100"
+                  data-lightbox="pic-gallery"
+                  data-title="Shore side of Fuji">
+                  <img
+                    src="assets/img/TN/FS_M.jpg"
+                    loading="lazy"
+                    alt="picture of Shore side of Fuji"
+                    class="img-fill"
+                /></a>
+              </div>
+              <div
+                class="img-container img-tall"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198212&authkey=%21AF7sHcdHQK99SoY&height=1024"
+                  class="w-100"
+                  data-lightbox="pic-gallery"
+                  data-title="Dock of Fuji">
+                  <img
+                    src="assets/img/TN/DoF_M.jpg"
+                    loading="lazy"
+                    alt="picture of Dock of Fuji"
+                    class="img-fill"
+                /></a>
+              </div>
+              <div
+                class="img-container img-tall"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198209&authkey=%21AEbCabx6GYUpj9E&height=1024"
+                  class="w-100"
+                  data-lightbox="pic-gallery"
+                  data-title="Purple Pedals">
+                  <img
+                    src="assets/img/TN/PurPed_M.jpg"
+                    loading="lazy"
+                    alt="picture of Purple Pedals"
+                    class="img-fill"
+                /></a>
+              </div>
+              <div
+                class="img-container"
+                data-aos="zoom-in-up"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198206&authkey=%21AIMb7uXy5BMlxNA&width=1024"
+                  class="w-100"
+                  data-lightbox="pic-gallery"
+                  data-title="Blossom of Fuji">
+                  <img
+                    src="assets/img/TN/BoF_M.jpg"
+                    loading="lazy"
+                    alt="picture of Blossom of Fuji"
+                    class="img-fill"
+                /></a>
+              </div>
+              <div
+                class="img-container img-wide"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198210&authkey=%21AG7v2BwFyMHkFYM&width=1024"
+                  class="w-100"
+                  data-lightbox="pic-gallery"
+                  data-title="Lavendar Field">
+                  <img
+                    src="assets/img/TN/LF_M.jpg"
+                    loading="lazy"
+                    alt="picture of Lavendar Field"
+                    class="img-fill"
+                /></a>
+              </div>
+              <div
+                class="img-container"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198207&authkey=%21AEE_avt3ZfOFlv0&width=1024"
+                  class="w-100"
+                  data-lightbox="pic-gallery"
+                  data-title="Small but beautiful">
+                  <img
+                    src="assets/img/TN/SbB_M.jpg"
+                    loading="lazy"
+                    alt="picture of Small but beautiful"
+                    class="img-fill"
+                /></a>
+              </div>
+              <div
+                class="img-container"
+                data-aos="zoom-in-up"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198205&authkey=%21APn0248bsg9FxVA&width=1024"
+                  class="w-100"
+                  data-lightbox="pic-gallery"
+                  data-title="Pale White Flower">
+                  <img
+                    src="assets/img/TN/PWF_M.jpg"
+                    loading="lazy"
+                    alt="picture of Pale White Flower"
+                    class="img-fill"
+                /></a>
+              </div>
+              <div
+                class="img-container img-tall"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198203&authkey=%21AD_aQvTRLxg94nI&width=1024"
+                  class="w-100"
+                  data-lightbox="pic-gallery"
+                  data-title="Pale Purple">
+                  <img
+                    src="assets/img/TN/Pp_M.jpg"
+                    loading="lazy"
+                    alt="picture of Pale Purple"
+                    class="img-fill"
+                /></a>
+              </div>
+              <div
+                class="img-container img-wide"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198202&authkey=%21ANmNA4N43tKBpoE&width=1024"
+                  class="w-100"
+                  data-lightbox="pic-gallery"
+                  data-title="Blue and Gold">
+                  <img
+                    src="assets/img/TN/BaG_M.jpg"
+                    loading="lazy"
+                    alt="picture of Blue and Gold"
+                    class="img-fill"
+                /></a>
+              </div>
+              <div
+                class="img-container"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198201&authkey=%21ABAEcNSAjarWzAE&width=1024"
+                  class="w-100"
+                  data-lightbox="pic-gallery"
+                  data-title="Blue Flower Star">
+                  <img
+                    src="assets/img/TN/BFS_M.jpg"
+                    loading="lazy"
+                    alt="picture of Blue Flower Star"
+                    class="img-fill"
+                /></a>
+              </div>
+              <div
+                class="img-container"
+                data-aos="zoom-in-up"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198208&authkey=%21AHiDCDyv9OOJiSc&width=1024"
+                  class="w-100"
+                  data-lightbox="pic-gallery"
+                  data-title="Purple and Blue Explosion">
+                  <img
+                    src="assets/img/TN/PaBE_M.jpg"
+                    loading="lazy"
+                    alt="picture of Purple and Blue Explosion"
+                    class="img-fill"
+                /></a>
+              </div>
+              <div
+                class="img-container"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198204&authkey=%21APd32KoAhnkh1BQ&width=1024"
+                  class="w-100"
+                  data-lightbox="pic-gallery"
+                  data-title="Magentas Vibrance">
+                  <img
+                    src="assets/img/TN/MV_M.jpg"
+                    loading="lazy"
+                    alt="picture of Magentas Vibrance"
+                    class="img-fill"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <!-- Videos Title -->
+          <div id="videos" class="row mt-5 pt-5 pb-3 scroll-margin-sub">
+            <div class="text-center">
+              <h1 class="lexend-bold">Videos</h1>
+              <hr class="hul mb-5" style="max-width: 23rem" />
+            </div>
+          </div>
+          <div>
+            <!-- Videos -->
+            <!-- TAOBG Card -->
+            <div class="row pt-3 pb-3 gap-0">
+              <div
+                class="vid-grid"
+                data-aos="zoom-in-up"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <div
+                  class="vid-container shadow"
+                  style="background-color: #000">
+                  <a
+                    href="https://youtu.be/3M1o4FtXgBM"
+                    class="vid-round"
+                    target="_blank">
+                    <img
+                      src="assets/img/TN/TAOBG_TN.jpg"
+                      class="vid-round img-grid-fill"
+                      loading="lazy"
+                      alt="thumbnail of The Aesthetics of Bethesda Games" />
+                  </a>
+                </div>
+                <div
+                  class="card shadow vid-info rounded-0 rounded-end p-4 h-100">
+                  <h5 class="card-title lexend-bold">
+                    The Aesthetics of Bethesda Games
+                  </h5>
+                  <p class="card-text roboto">
+                    This is a video essay about the aesthetic differences
+                    between Fallout 4 and Skyrim. It is to show how aesthetics
+                    is essential and can vary with similar games from the same
+                    studio.
+                  </p>
+                  <a
+                    href="https://youtu.be/3M1o4FtXgBM"
+                    class="btn btn-page btn-lg btn-pill roboto-bold mb-3"
+                    style="width: 14rem"
+                    role="button"
+                    aria-disabled="true"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      class="bi bi-youtube"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                    </svg>
+                    YouTube Video</a
+                  >
+                  <small class="card-text roboto">
+                    <a
+                      href="https://docs.google.com/document/d/1s5GdB65_mLDYM4505Hs51wlWLzmH_iOD-TgLK46o5-Q/edit?usp=sharing"
+                      target="_blank"
+                      ><b>Sources and Citations</b></a
+                    >
+                  </small>
+                  <small class="card-text roboto text-body-secondary fst-italic"
+                    >*Note: This project for created for educational purposes
+                    and as a university project. Not used for any
+                    monitzation.</small
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Unity Tutorial Card -->
+            <div class="row pt-3 pb-3 gap-0">
+              <div
+                class="vid-grid"
+                data-aos="zoom-in-up"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <div
+                  class="vid-container shadow"
+                  style="background-color: #000">
+                  <a
+                    href="https://youtu.be/u_LjxJeXujo"
+                    class="vid-round"
+                    target="_blank">
+                    <img
+                      src="assets/img/TN/TBtUL_TN.jpg"
+                      class="vid-round img-grid-fill"
+                      loading="lazy"
+                      alt="thumbnail of The Aesthetics of Bethesda Games" />
+                  </a>
+                </div>
+                <div
+                  class="card shadow vid-info rounded-0 rounded-end p-4 h-100">
+                  <h5 class="card-title lexend-bold">
+                    The Basics to Unity Lighting
+                  </h5>
+                  <p class="card-text roboto">
+                    This video explains the basics of the Unity lighting system,
+                    with a focus on the two render pipelines that Unity offers:
+                    URP and HDRP. It covers their purposes, when and where to
+                    use them, and how to update and add them to previous
+                    projects. I edited the video completely myself, and it is
+                    also meant to demonstrate my knowledge of the game engine.
+                  </p>
+                  <a
+                    href="https://youtu.be/u_LjxJeXujo"
+                    class="btn btn-page btn-lg btn-pill roboto-bold mb-3"
+                    style="width: 14rem"
+                    role="button"
+                    aria-disabled="true"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      class="bi bi-youtube"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                    </svg>
+                    YouTube Video</a
+                  >
+                  <small class="card-text roboto">
+                    <a
+                      href="https://docs.google.com/document/d/1nywIoF8zBsgSP-3pZCIoe17ZHe9IQeaQ6yl3x8YpUvY/edit?usp=sharing"
+                      target="_blank"
+                      ><b>Sources and Citations</b></a
+                    >
+                  </small>
+                  <small class="card-text roboto text-body-secondary fst-italic"
+                    >*Note: This project for created for educational purposes
+                    and as a university project. Not used for any
+                    monitzation.</small
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- The Road to Redemption -->
+            <div class="row pt-3 pb-3 gap-0">
+              <div
+                class="vid-grid"
+                data-aos="zoom-in-up"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <div
+                  class="vid-container shadow"
+                  style="background-color: #000">
+                  <a
+                    href="https://youtu.be/JM-npSvuMD4"
+                    class="vid-round"
+                    target="_blank">
+                    <img
+                      src="assets/img/TN/TRtR_TN.jpg"
+                      class="vid-round img-grid-fill"
+                      loading="lazy"
+                      alt="thumbnail of The Aesthetics of Bethesda Games" />
+                  </a>
+                </div>
+                <div
+                  class="card shadow vid-info rounded-0 rounded-end p-4 h-100">
+                  <h5 class="card-title lexend-bold">The Road to Redemption</h5>
+                  <p class="card-text roboto">
+                    This video is an action short film centered around a western
+                    car chase. It was made using Red Dead Redemption 2 and Forza
+                    Horizon 5. It was created for a class while in University.
+                  </p>
+                  <a
+                    href="https://youtu.be/JM-npSvuMD4"
+                    class="btn btn-page btn-lg btn-pill roboto-bold mb-3"
+                    style="width: 14rem"
+                    role="button"
+                    aria-disabled="true"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      class="bi bi-youtube"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                    </svg>
+                    YouTube Video</a
+                  >
+                  <small class="card-text roboto">
+                    <a
+                      href="https://docs.google.com/document/d/1BVL-ifWQ7Tnq66b8TtkZaxmEICicHuEEDIbYr9bfzBk/edit?usp=sharing"
+                      target="_blank"
+                      ><b>Sources and Citations</b></a
+                    >
+                  </small>
+                  <small class="card-text roboto text-body-secondary fst-italic"
+                    >*Note: This project for created for educational purposes
+                    and as a university project. Not used for any
+                    monitzation.</small
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- The Pandemic and Mental Health -->
+            <div class="row pt-3 pb-3 gap-0">
+              <div
+                class="vid-grid"
+                data-aos="zoom-in-up"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <div class="vid-container shadow">
+                  <a
+                    href="https://youtu.be/ecP9xC8XACw"
+                    class="vid-round"
+                    target="_blank">
+                    <img
+                      src="assets/img/TN/TPaMH_TN.jpg"
+                      class="vid-round img-grid-fill"
+                      loading="lazy"
+                      alt="thumbnail of The Aesthetics of Bethesda Games" />
+                  </a>
+                </div>
+                <div
+                  class="card shadow vid-info rounded-0 rounded-end p-4 h-100">
+                  <h5 class="card-title lexend-bold">
+                    The Pandemic and Mental Health
+                  </h5>
+                  <p class="card-text roboto">
+                    This video is about the pandemic's effects on mental health.
+                    Going over various mental health issues faced by people
+                    through this period of time.
+                  </p>
+                  <a
+                    href="https://youtu.be/ecP9xC8XACw"
+                    class="btn btn-page btn-lg btn-pill roboto-bold mb-3"
+                    style="width: 14rem"
+                    role="button"
+                    aria-disabled="true"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      class="bi bi-youtube"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                    </svg>
+                    YouTube Video</a
+                  >
+                  <small class="card-text roboto">
+                    <a
+                      href="https://docs.google.com/document/d/1Ls7__0vBWrZNHMS16HsznVdz48QmVIZny-ZkGA8ycMU/edit?usp=sharing"
+                      target="_blank"
+                      ><b>Sources and Citations</b></a
+                    >
+                  </small>
+                  <small class="card-text roboto text-body-secondary fst-italic"
+                    >*Note: This project for created for educational purposes
+                    and as a university project. Not used for any
+                    monitzation.</small
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Graphic Art and Paintings Title -->
+          <div id="gaap" class="row mt-5 pt-5 pb-3 scroll-margin-sub">
+            <div class="text-center">
+              <h1 class="lexend-bold wide-title">Graphic Art and Paintings</h1>
+              <hr class="hul mb-5" style="max-width: 73rem" />
+            </div>
+          </div>
+          <!-- Graphic Art and Paintings Gallery -->
+          <div class="row pb-3">
+            <div class="gallery-grid">
+              <!-- Yeti Mouth Games Logo -->
+              <div
+                class="shadow img-container"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198168&authkey=%21ANC1KFPz3HK84jg&width=900&height=900"
+                  class="w-100"
+                  data-lightbox="gaap-gallery"
+                  data-title="Yeti Mouth Games Logo">
+                  <img
+                    src="assets/img/TN/YMGLogo_M.jpg"
+                    loading="lazy"
+                    alt="picture of Yeti Games Logo"
+                    class="img-fill"
+                /></a>
+              </div>
+              <!-- Local Artist Showcase Poster -->
+              <div
+                class="img-container"
+                data-aos="zoom-in-up"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198167&authkey=%21AMpkZmduJJuGc7M&height=1024"
+                  class="w-100"
+                  data-lightbox="gaap-gallery"
+                  data-title="Local Artist Showcase Poster">
+                  <img
+                    src="assets/img/TN/LocalArtistShowcasePoster.jpg"
+                    loading="lazy"
+                    alt="picture of Local Artist Showcase Poster"
+                    class="img-fill"
+                /></a>
+              </div>
+              <!-- Stroll through Mason -->
+              <div
+                class="img-container img-tall"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198169&authkey=%21AJ6vMd3L1Plw3WQ&height=1024"
+                  class="w-100"
+                  data-lightbox="gaap-gallery"
+                  data-title="Stroll through Mason">
+                  <img
+                    src="assets/img/TN/STM_M.jpg"
+                    loading="lazy"
+                    alt="picture of Stroll through Mason"
+                    class="img-fill"
+                /></a>
+              </div>
+              <!-- F for Fantasy -->
+              <div
+                class="img-container img-wide"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198160&authkey=%21AP-QpuJGvrEpMbI&height=1024"
+                  class="w-100"
+                  data-lightbox="gaap-gallery"
+                  data-title="F for Fantasy">
+                  <img
+                    src="assets/img/TN/Fan_M.jpg"
+                    loading="lazy"
+                    alt="picture of F for Fantasy"
+                    class="img-fill"
+                /></a>
+              </div>
+              <!-- M for Medieval -->
+              <div
+                class="img-container img-tall"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198159&authkey=%21AN-o0SQa-Wmu7Lc&height=1024"
+                  class="w-100"
+                  data-lightbox="gaap-gallery"
+                  data-title="M for Medieval">
+                  <img
+                    src="assets/img/TN/Med_M.jpg"
+                    loading="lazy"
+                    alt="picture of M for Medieval"
+                    class="img-fill"
+                /></a>
+              </div>
+              <!-- Earth -->
+              <div
+                class="img-container"
+                data-aos="zoom-in-up"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198267&authkey=%21AMIczIa5Ew9z-Z4&width=1024"
+                  class="w-100"
+                  data-lightbox="gaap-gallery"
+                  data-title="Earth (3D Render)">
+                  <img
+                    src="assets/img/TN/Earth_M.jpg"
+                    loading="lazy"
+                    alt="picture of Earth (3D Render)"
+                    class="img-fill"
+                /></a>
+              </div>
+              <!-- Lakeside -->
+              <div
+                class="img-container"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198266&authkey=%21AMSEgDRk6H0QFlQ&width=1024"
+                  class="w-100"
+                  data-lightbox="gaap-gallery"
+                  data-title="Lakeside (3D Render)">
+                  <img
+                    src="assets/img/TN/Lakeside_M.jpg"
+                    loading="lazy"
+                    alt="picture of Lakeside (3D Render)"
+                    class="img-fill"
+                /></a>
+              </div>
+              <!-- Rocky Mountain Lakes -->
+              <div
+                class="img-container img-wide"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198268&authkey=%21ANufNrvDC71UEcI&width=1024"
+                  class="w-100"
+                  data-lightbox="gaap-gallery"
+                  data-title="Rocky Mountain Lakes (3D Render)">
+                  <img
+                    src="assets/img/TN/RML_M.jpg"
+                    loading="lazy"
+                    alt="picture of Rocky Mountain Lakes (3D Render)"
+                    class="img-fill"
+                /></a>
+              </div>
+              <!-- Mountains! -->
+              <div
+                class="img-container"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198269&authkey=%21AOeNYXUew9rCNsw&width=1024"
+                  class="w-100"
+                  data-lightbox="gaap-gallery"
+                  data-title="Mountains! (3D Render)">
+                  <img
+                    src="assets/img/TN/GMr_M.jpg"
+                    loading="lazy"
+                    alt="picture of Mountains! (3D Render)"
+                    class="img-fill"
+                /></a>
+              </div>
+              <!-- Still life of Hot and Cold -->
+              <div
+                class="img-container img-tall"
+                data-aos="zoom-in-up"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198280&authkey=%21ANGJdgf1Qu-Qql8&height=1024"
+                  class="w-100"
+                  data-lightbox="gaap-gallery"
+                  data-title="Still life of Hot and Cold">
+                  <img
+                    src="assets/img/TN/SLoHaC_M.jpg"
+                    loading="lazy"
+                    alt="picture of Still life of Hot and Cold"
+                    class="img-fill"
+                /></a>
+              </div>
+              <!-- Still life of Randomn things Dual Source Lights -->
+              <div
+                class="img-container"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198282&authkey=%21AB02PeB8R8YDbDg&width=1024"
+                  class="w-100"
+                  data-lightbox="gaap-gallery"
+                  data-title="Still life of Randomn things Dual Source Lights">
+                  <img
+                    src="assets/img/TN/SLoRTDSL_M.jpg"
+                    loading="lazy"
+                    alt="picture of Still life of Randomn things Dual Source Lights"
+                    class="img-fill"
+                /></a>
+              </div>
+              <!-- Still life of Randomn things Color -->
+              <div
+                class="img-container"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198277&authkey=%21AJpBmKBvASI7pBA&width=1024"
+                  class="w-100"
+                  data-lightbox="gaap-gallery"
+                  data-title="Still life of Randomn things Color">
+                  <img
+                    src="assets/img/TN/SLoRTC_M.jpg"
+                    loading="lazy"
+                    alt="picture of Still life of Randomn things Color"
+                    class="img-fill"
+                /></a>
+              </div>
+              <!-- Still life of Randomn things 1 -->
+              <div
+                class="img-container"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198276&authkey=%21AKm_wyweki4oe1c&width=2367&height=3300"
+                  class="w-100"
+                  data-lightbox="gaap-gallery"
+                  data-title="Still life of Randomn Things 1">
+                  <img
+                    src="assets/img/TN/Still Life of Random things1.jpg"
+                    loading="lazy"
+                    alt="picture of Still life of Randomn Things 1"
+                    class="img-fill"
+                /></a>
+              </div>
+              <!-- Still life Potrait of Myself -->
+              <div
+                class="img-container img-wide"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198278&authkey=%21AL9I19cAaFM7Gmg&width=1024"
+                  class="w-100"
+                  data-lightbox="gaap-gallery"
+                  data-title="Still life Potrait of Myself">
+                  <img
+                    src="assets/img/TN/SLPoM_M.jpg"
+                    loading="lazy"
+                    alt="picture of Still life Potrait of Myself"
+                    class="img-fill"
+                /></a>
+              </div>
+              <!-- Still life of Randomn things -->
+              <div
+                class="img-container"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <a
+                  href="https://onedrive.live.com/embed?resid=9E41FA92DBB9EDC7%2198279&authkey=%21ACG0d4GlkFuCs7Y&width=1024"
+                  class="w-100"
+                  data-lightbox="gaap-gallery"
+                  data-title="Still life of Randomn things">
+                  <img
+                    src="assets/img/TN/SLoRT2_M.jpg"
+                    loading="lazy"
+                    alt="picture of Still life of Randomn things"
+                    class="img-fill"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Header for Education -->
+      <header class="h-50">
+        <img
+          src="assets/bg/WebsiteBg3.webp"
+          alt="Background"
+          class="bg-landing"
+          style="bottom: 0px" />
+        <h1 class="lexend-bold text-center text-light wide-title super-heading">
+          Education
+        </h1>
+      </header>
+      <!-- Education -->
+      <section
+        id="education"
+        class="container-xxxl bg-light mw-100 scroll-margin">
+        <div class="container-xxl pt-5 pb-5">
+          <div class="row pt-5 pb-3">
+            <div class="text-center">
+              <h1 class="lexend-bold">Degree</h1>
+              <hr class="hul mb-5" style="max-width: 23rem" />
+            </div>
+          </div>
+          <div class="row">
+            <div
+              class="col ps-5 pe-5 pb-5 text-center"
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+              data-aos-anchor-placement="center-bottom">
+              <p class="text-center roboto-medium fs-1">
+                I recently graduated with a <br /><b
+                  >Bachelor's of Computer Game Design</b
+                ><br />
+                from George Mason University.
+              </p>
+            </div>
+          </div>
+          <div class="row pt-5 pb-3">
+            <div class="text-center">
+              <h1 class="lexend-bold wide-title">Certificates</h1>
+              <hr class="hul mb-5" style="max-width: 33rem" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col mb-3 card-min-width">
+              <div
+                class="card"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <div class="card-body p-4">
+                  <h5 class="card-title lexend-bold">CS50x Certificate</h5>
+                  <p class="card-text">
+                    <small class="text-body-secondary"
+                      >Gained January 2024</small
+                    >
+                  </p>
+                </div>
+                <a
+                  href="/assets/img/CS50xCertificate.png"
+                  class="w-100"
+                  data-lightbox="certificates-gallery"
+                  data-title="CS50x Certificate">
+                  <img
+                    src="/assets/img/CS50xCertificate.png"
+                    class="card-img-bottom"
+                    alt="CS50x Certificate" />
+                </a>
+              </div>
+            </div>
+            <div class="col mb-3 card-min-width">
+              <div
+                class="card"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <div class="card-body p-4">
+                  <h5 class="card-title lexend-bold">CS50P Certificate</h5>
+                  <p class="card-text">
+                    <small class="text-body-secondary"
+                      >Gained September 2023</small
+                    >
+                  </p>
+                </div>
+                <a
+                  href="/assets/img/CS50P.png"
+                  class="w-100"
+                  data-lightbox="certificates-gallery"
+                  data-title="CS50P Certificate">
+                  <img
+                    src="/assets/img/CS50P.png"
+                    class="card-img-bottom"
+                    alt="CS50P Certificate" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Header for Contact -->
+      <header class="h-50">
+        <img
+          src="assets/bg/WebsiteBg1.webp"
+          alt="Background"
+          class="bg-landing" />
+        <h1 class="lexend-bold text-center text-light wide-title super-heading">
+          Contact Me
+        </h1>
+      </header>
+      <!-- Contact -->
+      <section
+        id="contact"
+        class="container-xxxl bg-light mw-100 scroll-margin">
+        <div class="container-xxl pt-5 pb-5">
+          <div class="row mt-5 pt-5 pb-3">
+            <div class="text-center">
+              <h1 class="lexend-bold wide-title">Ways to Contact Me</h1>
+              <hr class="hul mb-5" style="max-width: 55rem" />
+            </div>
+          </div>
+          <div class="row text-center justify-content-center">
+            <!-- Email -->
+            <div
+              class="col-lg-3 text-center"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-anchor-placement="bottom-bottom">
+              <h3 class="lexend-bold">Email</h3>
+              <p class="roboto-medium mt-4 fs-5 text-break">
+                dominic.a.giarrusso@gmail.com
+              </p>
+            </div>
+            <div class="vr"></div>
+            <!-- Phone -->
+            <div
+              class="col-lg-3 text-center"
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+              data-aos-anchor-placement="bottom-bottom">
+              <h3 class="lexend-bold">Phone</h3>
+              <p class="roboto-medium mt-4 fs-5">
+                703-980-0949<br />
+                <small class="text-body-secondary roboto fst-italic mt-2 fs-6"
+                  >More likely to pickup between 11am-7pm</small
+                >
+              </p>
+            </div>
+            <div class="vr"></div>
+            <!-- Socials -->
+            <div
+              class="col-lg-3 text-center"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-anchor-placement="bottom-bottom">
+              <h3 class="lexend-bold">Socials</h3>
+              <div class="mt-4">
+                <!-- LinkedIn -->
+                <a
+                  class="btn btn-social btn-lg rounded-circle text-center p-2"
+                  href="https://www.linkedin.com/in/dominic-giarrusso/"
+                  role="button"
+                  target="_blank">
+                  <svg
+                    class="justify-content-center m-1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="42"
+                    height="42"
+                    fill="currentColor"
+                    class="bi bi-linkedin"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                  </svg>
+                </a>
+                <!-- GitHub -->
+                <a
+                  class="btn btn-social btn-lg rounded-circle text-center p-2"
+                  href="https://github.com/Dman55g"
+                  role="button"
+                  target="_blank">
+                  <svg
+                    class="justify-content-center m-1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="42"
+                    height="42"
+                    fill="currentColor"
+                    class="bi bi-github"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                  </svg>
+                </a>
+                <!-- Discord -->
+                <a
+                  class="btn btn-social btn-lg rounded-circle text-center p-2"
+                  href="https://discord.com/users/@dman55g"
+                  role="button"
+                  target="_blank">
+                  <svg
+                    class="justify-content-center m-1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="42"
+                    height="42"
+                    fill="currentColor"
+                    class="bi bi-discord"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-5 text-center">
+            <span class="lexend-bold fs-1">or</span>
+          </div>
+          <!-- Form to send message -->
+          <div class="row mt-5 justify-content-center">
+            <div
+              class="card shadow bg-primary"
+              style="max-width: 55rem"
+              data-aos="zoom-out"
+              data-aos-duration="1000"
+              data-aos-anchor-placement="center-bottom">
+              <div class="card-body">
+                <h2 class="card-title lexend-bold text-center pt-3 text-white">
+                  Send me a message
+                </h2>
+                <hr class="hul mb-5" style="max-width: 24rem" />
+                <form
+                  class="row g-3 needs-validation"
+                  action="https://formspree.io/f/xkndgzbb"
+                  method="POST"
+                  novalidate>
+                  <div class="col-md-6 form-floating">
+                    <input
+                      type="text"
+                      class="form-control ps-4 roboto"
+                      id="floatingInput"
+                      placeholder="First name"
+                      name="First name"
+                      required />
+                    <label class="fia roboto" for="floatingInput"
+                      >First name</label
+                    >
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">
+                      Enter in a name to continue
+                    </div>
+                  </div>
+                  <div class="col-md-6 form-floating">
+                    <input
+                      type="text"
+                      class="form-control ps-4 roboto"
+                      id="floatingInput"
+                      placeholder="Last name"
+                      name="Last name"
+                      required />
+                    <label class="fia roboto" for="floatingInput"
+                      >Last name</label
+                    >
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">
+                      Enter in name to continue
+                    </div>
+                  </div>
+                  <div class="col 12 form-floating">
+                    <input
+                      type="email"
+                      class="form-control ps-4 roboto"
+                      id="floatingInput"
+                      placeholder="Email"
+                      name="email"
+                      required />
+                    <label class="fia roboto" for="floatingInput">Email</label>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Enter in valid email</div>
+                  </div>
+                  <div class="row g-2">
+                    <div class="col 12 form-floating">
+                      <textarea
+                        class="form-control ps-4"
+                        placeholder="Leave a comment here"
+                        id="floatingTextarea2"
+                        style="height: 200px"
+                        name="message"
+                        required></textarea>
+                      <label class="fia roboto" for="floatingTextarea2"
+                        >Message</label
+                      >
+                      <div class="valid-feedback">Looks good!</div>
+                      <div class="invalid-feedback">Enter in a message</div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-secondary roboto" type="submit">
+                      Send message
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="text-center text-white bg-primary roboto px-2">
+          <p class="pt-3">
+            Copyright &copy; Dominic Giarrusso 2024, All Rights Reserved.
+          </p>
+          <p class="pb-3">
+            Built and Powered by
+            <a class="footer-a" href="https://getbootstrap.com/" target="_blank"
+              >Bootstrap</a
+            >
+            <a
+              class="footer-a"
+              href="https://lokeshdhakar.com/projects/lightbox2/"
+              target="_blank"
+              >Lightbox 2</a
+            >
+            <a
+              class="footer-a"
+              href="https://michalsnik.github.io/aos/"
+              target="_blank"
+              >Animate On Scroll</a
+            >
+            <a class="footer-a" href="https://formspree.io/" target="_blank"
+              >Formspree</a
+            >
+            and
+            <a>My ❤️ & 💧.</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="node_modules/lightbox2/dist/js/lightbox-plus-jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "prettier.tabWidth": 2,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.bracketSameLine": true,
+  "indentRainbow.ignoreErrorLanguages": ["html", "markdown"]
+}

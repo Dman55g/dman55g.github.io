@@ -1,0 +1,46 @@
+//custom variables
+$blue: #00003d;
+$red: #ed1f27;
+$secondary: $red;
+
+// Get all color shades as utilites
+
+// import bootstrap sass
+@import '~/bootstrap/scss/bootstrap.scss';
+
+$all-colors: map-merge-multiple($blues, $indigos, $purples, $pinks, $reds, $oranges, $yellows, $greens, $teals, $cyans);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "color": map-merge(
+      map-get($utilities, "color"),
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "color"), "values"),
+          (
+            $all-colors
+          ),
+        ),
+      ),
+    ),
+  )
+);
+
+// adds all red variants
+@each $color, $value in $reds {
+    :root {
+        --#{$prefix}#{$color}: #{$value};
+    }
+}
+
+// adds all blue variants
+@each $color, $value in $blues {
+    :root {
+        --#{$prefix}#{$color}: #{$value};
+    }
+}
+
+
+
+@import "~/bootstrap/scss/utilities/api";
