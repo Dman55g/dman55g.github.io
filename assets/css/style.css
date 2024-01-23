@@ -317,6 +317,11 @@ header {
     border-top-right-radius: 0 !important;
     border-bottom-left-radius: 3em !important;
   }
+
+  .navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 @media screen and (max-width: 1120px) {
