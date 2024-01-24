@@ -478,6 +478,10 @@ header {
 .scroll-margin {
   scroll-margin-top: 558px;
 }
+
+.scroll-margin-project {
+  scroll-margin-top: 300px;
+}
 .scroll-margin-sub {
   scroll-margin-top: 5rem;
 }
