@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Dominic Giarrusso's Portfolio Website" />
     <title>Dominic Giarrusso</title>
     <link rel="icon" type="image/x-icon" href="assets/brand/DG-icon.ico" />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/bscs.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,7 +19,6 @@
     <link
       href="node_modules/lightbox2/dist/css/lightbox.css"
       rel="stylesheet" />
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Navbar -->
@@ -29,11 +30,14 @@
       <div class="container-xxxl">
         <a class="navbar-brand fs-4 text-light" href="#home">
           <img
-            src="assets/brand/DG-logo.png"
+            src="assets/brand/DG-logo_ES.png"
             alt="Logo"
             width="75"
             height="75"
-            class="d-inline-block align-text-center me-3" />Dominic Giarrusso</a
+            class="d-inline-block align-text-center me-3" /><span
+            class="navText"
+            >Dominic Giarrusso</span
+          ></a
         >
         <button
           id="navbar-hamburger"
@@ -76,8 +80,7 @@
           <ul class="navbar-nav ms-auto gap-2">
             <li class="nav-item mx-0 mx-lg-1">
               <a
-                id="nav-btn"
-                class="btn btn-pill btn-nav-landing lexend-bold fs-4"
+                class="btn btn-pill nav-btn btn-nav-landing lexend-bold fs-4"
                 href="#about">
                 <svg
                   class="icon-align"
@@ -96,8 +99,7 @@
 
             <li class="nav-item">
               <a
-                id="nav-btn"
-                class="btn btn-pill btn-nav-landing lexend-bold fs-4"
+                class="btn btn-pill nav-btn btn-nav-landing lexend-bold fs-4"
                 href="#projects">
                 <svg
                   class="icon-align"
@@ -117,8 +119,7 @@
             </li>
             <li class="nav-item">
               <a
-                id="nav-btn"
-                class="btn btn-pill btn-nav-landing lexend-bold fs-4"
+                class="btn btn-pill nav-btn btn-nav-landing lexend-bold fs-4"
                 href="#gallery">
                 <svg
                   class="icon-align"
@@ -136,8 +137,7 @@
             </li>
             <li class="nav-item">
               <a
-                id="nav-btn"
-                class="btn btn-pill btn-nav-landing lexend-bold fs-4"
+                class="btn btn-pill nav-btn btn-nav-landing lexend-bold fs-4"
                 href="#education">
                 <svg
                   class="icon-align"
@@ -157,8 +157,7 @@
             </li>
             <li class="nav-item">
               <a
-                id="nav-btn"
-                class="btn btn-pill btn-nav-landing lexend-bold fs-4"
+                class="btn btn-pill nav-btn btn-nav-landing lexend-bold fs-4"
                 href="#contact"
                 data-bs-offset="100">
                 <svg
@@ -204,6 +203,7 @@
             <div class="col-lg-4 text-end lpfp h-100">
               <img
                 src="assets/img/DG-pfp_M.png"
+                alt="Profile Picture"
                 class="pfp"
                 data-aos="fade-right"
                 data-aos-duration="1000" />
@@ -213,8 +213,14 @@
               class="col-lg-6 lt h-100 align-self-center"
               data-aos="fade-left"
               data-aos-duration="1000">
-              <img src="assets/headings/DG-name_M.png" class="landing-text" />
-              <img src="assets/headings/DD-role_M.png" class="landing-role" />
+              <img
+                src="assets/headings/DG-name_M.png"
+                alt="Name"
+                class="landing-text" />
+              <img
+                src="assets/headings/DD-role_M.png"
+                alt="Role"
+                class="landing-role" />
             </div>
           </div>
         </div>
@@ -232,23 +238,18 @@
           <div class="row">
             <div class="col pb-5">
               <p
-                class="text-center roboto-medium fs-3"
+                class="text-center roboto-medium fs-2"
                 data-aos="zoom-in"
                 data-aos-duration="1000">
-                I'm Dominic Giarrusso, I design like a dreamer, code like a
-                machine, and bridge them both together into something
-                beautifully functional. As a George Mason grad with a deep
-                passion for crafting fun and useful software. I push myself to
-                learn more and gain new experiences constantly, from building
-                with the cutting-edge game engine to creating helpful Chrome
-                extension. Remember that childhood game you couldn't get enough
-                of? I want to build that. The user-friendly tool that simplifies
-                your daily grind? That's my jam. When I'm not coding or
-                designing, I'm sharing my knowledge through Discord servers,
-                Stackoverflow and teaching aspiring developers. I thrive on
-                solving problems and pushing boundaries. So, let's talk design,
-                algorithms, and how we can together build the future, one line
-                of code at a time.
+                I developed a passion for programming while in college studying
+                game development, with my programming foundations rooted in
+                C/C++ and C#. This all came together in my capstone project,
+                <i>Awakened</i>, built with Unreal Engine 5. Since graduating,
+                I've broadened my horizons to software and web development,
+                having learned Python, JavaScript, and more. I also don't see
+                myself stopping anytime soon either. My journey is far from
+                over, and I'm excited to showcase my skills and start my
+                full-time career.
               </p>
             </div>
           </div>
@@ -271,7 +272,7 @@
                   alt="picture of Task:Timer Title" />
                 <div class="card-body">
                   <h5 class="card-title lexend-bold">Task:Timer</h5>
-                  <p class="card-text roboto">
+                  <p class="card-text roboto pb-4">
                     Task:Timer is a Chrome extension that helps you have better
                     time management. It uses the pomodoro technique to help you
                     focus on your work.
@@ -450,7 +451,7 @@
                   <p class="card-text roboto">
                     Git/Github, Visual Studio Code, Visual Studio, Unreal
                     Engine, Unity, Linux, Windows, Bash, PowerShell, Boostrap,
-                    and Flask
+                    Flask, and NodeJS
                   </p>
                 </div>
               </div>
@@ -613,19 +614,16 @@
               <div class="card shadow vid-info rounded-0 rounded-end p-4 h-100">
                 <h5 class="card-title lexend-bold">Task:Timer</h5>
                 <p class="card-text roboto">
-                  <b>Languages:</b> HTML, CSS, Javascript
+                  <b>Languages:</b> HTML, CSS, JavaScript
                 </p>
                 <p class="card-text roboto"><b>Framework:</b> Bootstrap</p>
-                <p class="card-text roboto">
+                <p class="card-text roboto pb-3">
                   <b>Description:</b> Task:Timer is a Chrome extension that
-                  allows you to set two timers at once. Why two-timers? you may
-                  now be asking. Well, the idea follows the time management
-                  method called The Pomodoro Technique. This technique follows
-                  the concept that you work more efficiently by working for a
-                  set number of time and then taking a break usually for a
-                  shorter amount of time. An example of this would be working
-                  for 30 minutes and then taking a break for 5 minutes.
-                  Task:Timer is to help time manage better.
+                  helps with better time management. The extension allows you to
+                  set 2 consecutive timers. The first timer is the work timer,
+                  and the second timer is the break timer. Once both timers are
+                  set you can then start them. This method of working follows
+                  the Pomodoro Technique.
                 </p>
                 <div class="row gap-2">
                   <a
@@ -715,7 +713,7 @@
                   >*Contact me for greater details about my contributions</small
                 >
                 <a
-                  href="https://dman55g.itch.io/awakened"
+                  href="https://domgiarrusso.itch.io/awakened"
                   class="btn btn-page btn-lg btn-pill roboto-bold"
                   style="width: 12rem"
                   role="button"
@@ -768,14 +766,15 @@
                   <b>Framework:</b> Flask and Bootstrap
                 </p>
                 <p class="card-text roboto">
-                  <b>Description:</b> This is a project I worked on while taking
-                  CS50x. It is a simple web app that allows you to create or log
-                  into an account. You can then look up a real-world stock price
+                  <b>Description:</b> This is a finance app created using the
+                  Flask framework for Python. I worked on it while taking CS50x.
+                  It is a simple web app that allows you to create or log into
+                  an account. You can then look up a real-world stock price
                   using Yahoo Finance API. In the web app, you can also buy,
                   sell, and track your stock. All the information is stored in a
                   SQL database and passwords are encrypted. None of the money
-                  and transactions are real it is just a simple demonstration.
-                  The majority of the code was written by myself but parts of it
+                  and transactions are real it is a simple demonstration. The
+                  majority of the code was written by myself but parts of it
                   were written by the CS50 team at Harvard.
                 </p>
                 <a
@@ -828,17 +827,15 @@
                 <h5 class="card-title lexend-bold">CLI Friends Sorter</h5>
                 <p class="card-text roboto"><b>Languages:</b> Python</p>
                 <p class="card-text roboto">
-                  <b>Description:</b> This program sorts out a list of your
-                  friends. It takes in a CSV file that has three columns. The
-                  first one is the name of the friend. The second column is the
-                  attribute of the friend. The third column is the birthday of
-                  the friend. The attribute and birthday are then sorted through
-                  the program and a new ouput CSV file is then given. In the
-                  output CSV you will find the same first column, name. In the
-                  second column, you will find the role in the friend group they
-                  were sorted into based off of their attribute. Then in the
-                  third column, you will find their zodiac sign based off of the
-                  birthday given.
+                  <b>Description:</b> A Python CLI program that allows you to
+                  input a list of friends with an attribute and birthdate. It
+                  then outputs a new list with the friends' role in the friend
+                  group and their star sign. The idea for this project came
+                  about after having a heated argument with my friends about
+                  what role we all play in our friend group. At the time I was
+                  taking Harvard's CS50P course and was about to start my final
+                  project. So I decided why not make a Python CLI program that
+                  allows you to be able to sort your friends and even yourself.
                 </p>
                 <a
                   href="https://github.com/DomGiarrusso/Friends_Sorter"
@@ -864,6 +861,216 @@
                 <small class="text-body-secondary roboto fst-italic pt-2"
                   >*Note: You will need python installed to run this program.
                 </small>
+              </div>
+            </div>
+          </div>
+          <!-- Portfolio -->
+          <div class="row pt-3 pb-3 gap-0">
+            <div
+              class="vid-grid"
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+              data-aos-anchor-placement="center-bottom">
+              <div
+                class="vid-container shadow h-100"
+                style="background-color: #01003d">
+                <img
+                  id="thumbnail"
+                  src="assets/brand/DG-logo_S.png"
+                  loading="lazy"
+                  class="vid-round img-grid-fill scale-down"
+                  alt="picture of Python Friends Sorter Title" />
+              </div>
+              <div class="card shadow vid-info rounded-0 rounded-end p-4 h-100">
+                <h5 class="card-title lexend-bold">Portfolio Website</h5>
+                <p class="card-text roboto">
+                  <b>Languages:</b> HTML, CSS, JavaScript
+                </p>
+                <p class="card-text roboto"><b>Framework:</b> Boostrap</p>
+                <p class="card-text roboto mb-5 pb-3">
+                  <b>Description:</b> I built this site you are on from the
+                  ground up using vanilla HTML, CSS, and JavaScript. I have
+                  added some additional libraries and frameworks to help build
+                  the site. The framework and libraries are Bootstrap, Lightbox
+                  2, and Animate on Scroll. I am using Formspree to handle the
+                  contact form.
+                </p>
+                <a
+                  href="https://github.com/DomGiarrusso/domgiarrusso.github.io"
+                  class="btn btn-page btn-lg btn-pill roboto-bold"
+                  style="width: 12rem"
+                  role="button"
+                  aria-disabled="true"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <svg
+                    class="icon-align"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    class="bi bi-github"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                  </svg>
+                  GitHub Repo</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Dorkmode for Visual Studio Code -->
+          <div class="row pt-3 pb-3 gap-0">
+            <div
+              class="vid-grid"
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+              data-aos-anchor-placement="center-bottom">
+              <div
+                class="vid-container shadow h-100"
+                style="background-color: #010409">
+                <img
+                  id="thumbnail"
+                  src="assets/img/TN/DfVSC_TN.webp"
+                  loading="lazy"
+                  class="vid-round img-grid-fill scale-down"
+                  alt="picture of Dorkmode for Visual Studio Code" />
+              </div>
+              <div class="card shadow vid-info rounded-0 rounded-end p-4 h-100">
+                <h5 class="card-title lexend-bold">
+                  Dorkmode for Visual Studio Code
+                </h5>
+                <p class="card-text roboto"><b>Languages:</b> JSON</p>
+                <p class="card-text roboto mb-5 pb-5">
+                  <b>Description:</b> A Visual Studio Code dark theme. This
+                  theme was created because I really liked the GitHub Dark
+                  theme. Though as you may have guessed I had my own issues with
+                  the theme. I decided to recreate the theme into my own image.
+                  I used many of the same colors found in GitHub's theme but
+                  changed into something I find more appealing.
+                </p>
+                <div class="row gap-2">
+                  <a
+                    href="https://marketplace.visualstudio.com/items?itemName=DomGiarrusso.dorkmode"
+                    class="btn btn-page btn-lg btn-pill roboto-bold"
+                    style="width: 20rem"
+                    role="button"
+                    aria-disabled="true"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <svg
+                      class="icon-align"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      class="bi bi-shop-window"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.37 2.37 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0M1.5 8.5A.5.5 0 0 1 2 9v6h12V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5m2 .5a.5.5 0 0 1 .5.5V13h8V9.5a.5.5 0 0 1 1 0V13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5a.5.5 0 0 1 .5-.5" />
+                    </svg>
+                    Visual Studio Marketplace</a
+                  >
+                  <a
+                    href="https://github.com/DomGiarrusso/Dorkmode"
+                    class="btn btn-page btn-lg btn-pill roboto-bold"
+                    style="width: 12rem"
+                    role="button"
+                    aria-disabled="true"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <svg
+                      class="icon-align"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      class="bi bi-github"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                    </svg>
+                    GitHub Repo</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Dorkmode for Chrome -->
+          <div class="row pt-3 pb-3 gap-0">
+            <div
+              class="vid-grid"
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+              data-aos-anchor-placement="center-bottom">
+              <div
+                class="vid-container shadow h-100"
+                style="background-color: #010409">
+                <img
+                  id="thumbnail"
+                  src="assets/img/TN/DfC_TN.webp"
+                  loading="lazy"
+                  class="vid-round img-grid-fill scale-down"
+                  alt="picture of Dorkmode for Chrome" />
+              </div>
+              <div class="card shadow vid-info rounded-0 rounded-end p-4 h-100">
+                <h5 class="card-title lexend-bold">Dorkmode for Chrome</h5>
+                <p class="card-text roboto"><b>Languages:</b> JSON</p>
+                <p class="card-text roboto pb-3">
+                  <b>Description:</b> A Google Chrome theme for people who like
+                  it dark but don't want it black. Inspired by another theme I
+                  created for VS Code. Chrome is my preferred browser to use for
+                  surfing the web. But I never was a fan of its dark theme. It
+                  wasn't ever dark enough for me. I tried out some other dark
+                  themes, but even they didn't fully get the color I was looking
+                  for. So, after making my own VS Code theme, I thought, why not
+                  create one for Chrome? I even used the same name and palette.
+                  Thus Dorkmode-for-Chrome was born.
+                </p>
+                <div class="row gap-2">
+                  <a
+                    href="https://github.com/DomGiarrusso/Dorkmode-for-Chrome"
+                    class="btn btn-page btn-lg btn-pill roboto-bold"
+                    style="width: 20rem"
+                    role="button"
+                    aria-disabled="true"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <svg
+                      class="icon-align"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      class="bi bi-shop-window"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.37 2.37 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0M1.5 8.5A.5.5 0 0 1 2 9v6h12V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5m2 .5a.5.5 0 0 1 .5.5V13h8V9.5a.5.5 0 0 1 1 0V13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5a.5.5 0 0 1 .5-.5" />
+                    </svg>
+                    Visual Studio Marketplace</a
+                  >
+                  <a
+                    href="https://github.com/DomGiarrusso/Dorkmode"
+                    class="btn btn-page btn-lg btn-pill roboto-bold"
+                    style="width: 12rem"
+                    role="button"
+                    aria-disabled="true"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <svg
+                      class="icon-align"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      class="bi bi-github"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                    </svg>
+                    GitHub Repo</a
+                  >
+                </div>
               </div>
             </div>
           </div>
@@ -2643,6 +2850,7 @@
                 <a
                   class="btn btn-social btn-lg rounded-circle text-center p-2"
                   href="https://www.linkedin.com/in/dominic-giarrusso/"
+                  aria-label="LinkedIn"
                   role="button"
                   target="_blank">
                   <svg
@@ -2661,6 +2869,7 @@
                 <a
                   class="btn btn-social btn-lg rounded-circle text-center p-2"
                   href="https://github.com/DomGiarrusso"
+                  aria-label="GitHub"
                   role="button"
                   target="_blank">
                   <svg
@@ -2679,6 +2888,7 @@
                 <a
                   class="btn btn-social btn-lg rounded-circle text-center p-2"
                   href="https://discord.com/users/@dman55g"
+                  aria-label="Discord"
                   role="button"
                   target="_blank">
                   <svg
@@ -2794,7 +3004,7 @@
             Copyright &copy; Dominic Giarrusso 2024, All Rights Reserved.
           </p>
           <p class="pb-3">
-            Built and Powered by
+            Made with and Powered by
             <a class="footer-a" href="https://getbootstrap.com/" target="_blank"
               >Bootstrap</a
             >
@@ -2814,7 +3024,7 @@
               >Formspree</a
             >
             and
-            <a>My ❤️ & 💧.</a>
+            <span>My ❤️ & 💧.</span>
           </p>
         </div>
       </footer>

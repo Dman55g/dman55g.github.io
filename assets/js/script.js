@@ -5,7 +5,7 @@ AOS.init();
 // Get navbar class and wrapper div
 const navbar = document.querySelector(".navbar");
 const wrapper = document.getElementById("wrapper");
-const navBtns = document.querySelectorAll("#nav-btn");
+const navBtns = document.querySelectorAll(".nav-btn");
 
 // Wrapper event listener to check for scrolling
 wrapper.addEventListener("scroll", () => {

@@ -472,11 +472,11 @@ header {
 /* Offset navbar locations */
 
 .scroll-margin-about {
-  scroll-margin-top: 100px;
+  scroll-margin-top: 6.25rem;
 }
 
 .scroll-margin {
-  scroll-margin-top: 558px;
+  scroll-margin-top: 33rem;
 }
 
 .scroll-margin-project {
@@ -559,4 +559,10 @@ header {
 .footer-a:hover {
   color: #f14c52;
   text-decoration: underline;
+}
+
+@media (max-width: 358px) {
+  .navText {
+    display: none;
+  }
 }
