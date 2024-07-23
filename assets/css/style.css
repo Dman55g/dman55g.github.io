@@ -511,6 +511,9 @@ header {
   text-shadow: 2px 2px 0px #00003d;
 }
 
+.p-social {
+  padding: 1.5rem;
+}
 @media screen and (max-width: 992px) {
   .pfp {
     max-width: 100%;
@@ -547,6 +550,15 @@ header {
   .super-heading {
     font-size: 4rem;
   }
+
+  .p-social {
+    padding: 1rem;
+  }
+
+  .social-icon {
+    width: 42px;
+    height: 42px;
+  }
 }
 
 .footer-a {
@@ -565,4 +577,12 @@ header {
   .navText {
     display: none;
   }
+}
+
+.text-bg-maroon {
+  background: #440000;
+}
+
+.sixteen-by-nine {
+  aspect-ratio: 16 / 9;
 }
